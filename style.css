@@ -1,0 +1,376 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+nav{
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.barra-navegacion{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.menu-hamburguesa{
+    display:none;
+}
+
+.navbar {
+    overflow: hidden;
+    transition: height 0.1s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar:hover {
+    height: 100px;
+  }
+
+.barra-busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+
+.barra-busqueda img{
+    position: relative;
+    right: 30px;
+    
+}
+
+.barra-busqueda input{
+    width: 200px;
+    height: 50px;
+    border: none;
+    text-align:center;
+    background: transparent;
+    border-bottom: 1px solid rgba(67,67,67,0.3);
+}
+
+.informacion{
+    margin-top:130px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.menu {
+    margin-top: 40px;
+    margin-left:60px;
+    
+}
+
+.menu ul li{
+    margin-top: 30px;
+    list-style: none;
+    font-size: 20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.opcion{
+    margin-top: 30px;
+    font-size: 20px;
+    
+    
+    
+}
+
+.opcion input{
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    
+}
+
+.ordenamiento{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    color: #a6a6a6;
+    margin-bottom: 30px;
+    margin-right: 70px;
+}
+
+select{
+    width: 200px;
+    height: 40px;
+    color: #ddd;
+    border: 1px solid #ddd;
+}
+
+.cards-individuales{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+    margin-top: 10px;
+    
+    
+}
+
+.cards{
+    width: 100%;
+    gap: 15px;
+}
+
+.card{
+    width:300px;
+    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+
+}
+
+.card p{
+    margin-top: 10px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.cuotas{
+    width: 200px;
+    height: 60px;
+    border: 1px solid rgb(173, 145, 6);
+    color:rgb(173, 145, 6) ;
+    text-align: center;
+    margin-left: 50px;
+    
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.boton button{
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgb(173, 145, 6);
+    background-color: white;
+    color: rgb(173, 145, 6);
+    font-weight: bold;
+}
+
+.tarjeta{
+    color: #a6a6a6;
+}
+
+.tarjeta img{
+    position: relative;
+    top: 35px;
+    right: 40px;
+}
+
+.gris{
+    width: 100%;
+    height: 100px;
+    background-color: #ddd;
+    
+}
+
+.correo p{
+    padding: 45px 0 0 40px;
+    margin-top: 100px;
+    font-weight: bold; 
+    
+}
+
+.input-email{
+    gap: 5px;
+    position: relative;
+    bottom: 15px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input-email input{
+    border: 1px solid black;
+    background-color: #ddd;
+    width: 170px;
+    height: 30px;
+    text-align: center;
+}
+.input-email button{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blanco-b{
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Media Query*/
+
+
+@media(max-width: 380px){
+    .menu-hamburguesa {
+        display: flex;
+        justify-content: flex-start;
+        width: 30px;
+        height: 30px;
+        margin-top: 30px;
+        margin-right: 300px;
+
+    }
+
+
+    .barra-busqueda input{
+        display: none;
+    }
+
+    .barra-busqueda img{
+        position: relative;
+        left:250px;
+        width: 20px;
+        
+    }
+
+
+    .menu{
+        display: none;
+    }
+    
+
+    .imagen-logo-principal{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: -240px;
+        
+    }
+
+    .cards-individuales{
+        
+        width: 100%;
+        margin-left: -90px;
+        
+    }
+
+    .informacion{
+        display: inline-block;
+        margin-left: 10px;
+        width: 100%;
+        
+    }
+
+    .gris{
+        text-align: center;
+    }
+
+
+    
+
+    
+    
+}
+
+@media (max-width: 640px){
+
+   .menu-hamburguesa{
+    display: flex;
+    width: 5px;
+    
+   }
+
+
+    .barra-busqueda{
+        display: none;
+    }
+
+    .barra-busqueda img{
+        position: relative;
+        left:250px;
+        width: 20px;
+        
+    }
+
+
+    .menu{
+        display: none;
+    }
+    
+
+    .imagen-logo-principal{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: -240px;
+        
+    }
+
+    .cards-individuales{
+        
+        width: 100%;
+        margin-left: -90px;
+        
+    }
+
+    .informacion{
+        display: inline-block;
+        margin-left: 10px;
+        width: 100%;
+        
+    }
+
+    .gris{
+        text-align: center;
+    }
+
+}
+
+
+
